@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+          background-color: #6495ED;
+          color: white;
+          font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Auto Escola Vrum!</h1>
+    <script>
+        alert("Bem Vinda a auto escola!");
+        let nome = prompt("Olá, qual seu nome?");
+        alert("Olá " + nome + "! Seja bem vinda");
+        let idade = prompt("Quantos anos você tem?");
+        let categoriaCnh = prompt("Qual categoria da CNH deseja emitir?");
+
+        if (idade >= 18 && (categoriaCnh === "A" || categoriaCnh === "B")) {
+            alert("Muito bem, você já pode tirar sua CNH categoria " + categoriaCnh);
+        }
+        else if (idade >= 21 && (categoriaCnh === "C" || categoriaCnh === "D")) {
+            alert("Muito bem, você já pode tirar sua CNH categoria " + categoriaCnh);
+        } else {
+            alert(" Ah, que pena, você ainda não tem idade para tirar sua CNH ");
+        }
+
+    </script>
+</body>
+</html>
